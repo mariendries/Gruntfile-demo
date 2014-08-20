@@ -1,7 +1,5 @@
 module.exports = function(grunt) {
 
-	var npmDependencies = require('./package.json').devDependencies;
-
 	// Load Grunt tasks declared in the package.json file
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
